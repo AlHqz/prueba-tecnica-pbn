@@ -3,7 +3,7 @@
 Prueba técnica para PBN para agregar recursos educativos al repositorio a través de un script en Python.
 
 ## Requisitos
-*   Python 3.7+ (o superior).  El script ha sido probado con Python 3.9, 3.10, 3.11 y 3.12.
+*   Python 3.7+
 *   Bibliotecas de Python:
     *   requests (para hacer las llamadas a la API)
     *   python-dotenv (para manejar el token)
@@ -32,4 +32,11 @@ python -m venv (nombre_del_environment)
 3. Ejecuta el script desde el IDE o consola:
 ```bash
 py prueba_tecnica.py
+```
+
+# Adicional
+* Es necesario cambiar la variable repo_owner al nombre de usuario del dueño del repositorio.
+* Si no permite ejecutar scripts, ejecuta este comando en la PowerShell (Con o sin permisos de administrador)
+```bash
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
