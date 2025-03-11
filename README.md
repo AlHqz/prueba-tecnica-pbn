@@ -21,7 +21,11 @@ pip install requests python-dotenv
 5.  Para mayor seguridad, en caso de que hagas cambios y lo subas a tu propio repositorio de GitHub. Crea un archivo .gitignore y dentro del mismo, escribe .env. Esto evitará que el archivo .env con tu token se suba a tu repositorio de GitHub
 
 # Tercero, instrucciones de uso (Windows)
-1. Activa el virtual environment:
+1. Crea un virtual environment en la misma carpeta donde está el archivo .py
+```bash
+python -m venv (nombre_del_environment)
+```
+3. Activa el virtual environment:
 ```bash
 .venv\Scripts\activate
 ```
