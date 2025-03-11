@@ -11,7 +11,7 @@ gh_token = os.environ.get("GITHUB_TOKEN")
 #Fragmentos de url para estructurar más fácil los requests
 url_base = "https://api.github.com"
 repo_nombre = "bitcoin-educational-content"
-repo_owner = "jramos0"
+repo_owner = "AlHqz"
 
 #Recibe la información como parámetros para generar el .md
 def crear_markdown(titulo_archivo, link_archivo, descripcion_archivo):
@@ -139,6 +139,12 @@ if __name__ == "__main__":
         print("---------------------------Información---------------------------")
         confirmacion_pr(pr)
 
+        print("------------------------------------------------------------------")
+        print("Comando cURL para verificar el PR desde consola:")
+        print(
+            f"curl -H \"Authorization: token {gh_token}\" "
+            f"{url_base}/repos/{repo_owner}/{repo_nombre}/pulls/{pr['number']}")
+        print("------------------------------------------------------------------")
         #En caso de que el usuario quiera ver información referente a todos los pr abiertos en el repo
         respuesta = input("¿Le gustaría ver el listado de todos los PullRequests abiertos? [y/n]")
         if respuesta.lower() == "y":
