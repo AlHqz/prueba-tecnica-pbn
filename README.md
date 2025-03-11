@@ -17,7 +17,7 @@ pip install requests python-dotenv
 1.  Consigue tu token en Settings->Developer Settings
 2.  Clona el repositorio a tu computadora
 3.  En la carpeta donde está este archivo y el archivo .py, crea un nuevo archivo llamado .env (sin extensión)
-4.  Dentro del archivo escribe lo siguiente: GITHUB_TOKEN=<TuToken> (Reemplaza <TuToken> por el token que generaste)
+4.  Dentro del archivo escribe lo siguiente: GITHUB_TOKEN= Tu-Token (Reemplaza Tu-Token por el token que generaste)
 5.  Para mayor seguridad, en caso de que hagas cambios y lo subas a tu propio repositorio de GitHub. Crea un archivo .gitignore y dentro del mismo, escribe .env. Esto evitará que el archivo .env con tu token se suba a tu repositorio de GitHub
 
 # Tercero, instrucciones de uso (Windows)
@@ -25,7 +25,7 @@ pip install requests python-dotenv
 ```bash
 python -m venv (nombre_del_environment)
 ```
-3. Activa el virtual environment:
+2. Activa el virtual environment:
 ```bash
 .venv\Scripts\activate
 ```
